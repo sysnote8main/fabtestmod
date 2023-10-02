@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fabtestmod",
+  "version": "${version}",
+  "name": "fabtestmod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/sysnote8/fabtestmod"
+  },
+  "license": "MIT",
+  "icon": "assets/fabtestmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.sysnote8.fabtestmod.client.FabtestmodClient"
+    ],
+    "main": [
+      "com.sysnote8.fabtestmod.Fabtestmod"
+    ]
+  },
+  "mixins": [
+    "fabtestmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
